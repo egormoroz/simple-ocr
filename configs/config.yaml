@@ -1,0 +1,17 @@
+config:
+  backbone:
+    in_shape: [1, 32, 32]
+    n_layers: 3
+    init_filters: 4
+    ch_out: 16
+  encoder:
+    in_shape: [16, 4, 4]
+    n_blocks: 4
+    n_embd: 64
+    n_heads: 4
+  decoder:
+    n_ctx: 16
+    n_vocab: 28
+    n_blocks: 64
+    n_embd: 64
+    n_heads: 4

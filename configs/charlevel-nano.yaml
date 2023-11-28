@@ -1,0 +1,20 @@
+config:
+  backbone:
+    ch_in: 1
+    n_layers: 3
+    init_filters: 4
+    ch_out: 4
+  encoder:
+    ch_in: 4 
+    n_ctx: 16
+    patch_size: [4,4]
+
+    n_blocks: 4
+    n_embd: 64
+    n_heads: 4
+  decoder:
+    n_ctx: 34
+    n_vocab: 100
+    n_blocks: 4
+    n_embd: 64
+    n_heads: 4
